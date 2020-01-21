@@ -7,5 +7,5 @@
  * github.com/elijahjcobb
  *
  */
-console.log("fewwef");
+console.log("Hello, world.");
 //# sourceMappingURL=index.js.map

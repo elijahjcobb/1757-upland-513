@@ -8,4 +8,4 @@
  *
  */
 
-console.log("fewwef");
+console.log("Hello, world.");
