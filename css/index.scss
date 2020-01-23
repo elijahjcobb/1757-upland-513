@@ -2,89 +2,88 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	border: solid red 1px;
+	//border: solid red 1px;
 }
 
-header {
-	height: 100vh;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background: black;
 }
 
-header nav {
-
+nav {
+	top: 0;
+	position: fixed;
+	z-index: 39;
 	height: 20vh;
+	width: 100vw;
 	background: black;
 	color: white;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	text-align: center;
+	justify-content: space-between;
+	padding: 0 20px;
 
 	span {
-		display: block;
-		font-size: 1.5em;
 		font-weight: bold;
-		padding: 4px;
+		font-size: 1.5em;
+	}
+
+	a {
+
 	}
 }
 
-header .nav-darken {
-	background: linear-gradient(rgba(0,0,0,1) -30px, rgba(0,0,0,0.5));
-	height: 80vh;
+.nav-background {
+	height: 100vh;
+	width: 100vw;
+	background-image: url("https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nav-titles {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.nav-darken {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+
+main {
+	top: 90vh;
 	width: 100vw;
 	position: absolute;
-	top: 20vh;
-}
-
-header .nav-img {
-	height: 80vh;
-	background-image: url("https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	background: black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
-	span {
-		z-index: 32;
-		color: white;
-	}
 }
 
-.amenities {
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 20px;
+.main-container {
+	width: 80vw;
+	margin-top: 10vw;
+	display: block;
+	color: white;
 }
 
-.amenity {
+section {
+	margin-bottom: 40px;
+}
 
-	margin: 20px
-	width: 300px;
-	height: 200px;
-	background: red;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 10px;
+h2 {
+	margin-bottom: 10px;
+}
 
-
-	.amenity-darken {
-		background: linear-gradient(rgba(0,0,0,1) -30px, rgba(0,0,0,0.5));
-		width: 300px;
-		height: 200px;
-		position: absolute;
-		border-radius: 10px;
-	}
-
-	.amenity-content {
-		color: white;
-		font-weight: bold;
-		z-index: 2;
-	}
+.floorplan-img {
+	width: 100%;
 }
