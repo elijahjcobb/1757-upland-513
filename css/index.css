@@ -16,12 +16,13 @@ nav {
   z-index: 39;
   height: 20vh;
   width: 100vw;
-  background: black;
-  color: white;
+  background: #ffcd00;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  border-bottom: solid black 2px;
 }
 nav span {
   font-weight: bold;
@@ -78,6 +79,47 @@ h2 {
 
 .floorplan-img {
   width: 100%;
+}
+
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.amenity {
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffcd00;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.amenity-darken {
+  border-radius: 10px;
+  width: 30vw;
+  height: 30vw;
+  position: absolute;
+}
+
+.amenity-content {
+  text-align: center;
+  font-weight: bold;
+  z-index: 2;
+  color: black;
+}
+
+.map {
+  width: 100%;
+  height: 60vh;
+}
+.map .map-item {
+  border: none;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
